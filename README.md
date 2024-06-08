@@ -83,12 +83,12 @@ Run through the installer then move the drive to the CyberRoam.
 
 Get into the Cyberoam BIOS, and change the SATA mode to AHCI and the Baud to 115200. You should see pfSense booting on the serial console.
 
-The default pfSense user is 'admin' and password is 'pfSense'.
+The default pfSense user is 'admin' and password is 'pfsense'.
 
-The interfaces appear to pfSense like this:
+The ports are mapped like this:
 
-    em0 -> LAN
-    em1 -> WAN
-    em2 -> DMZ
+    LAN -> em0
+    WAN -> em1
+    DMZ -> em2
 
-If you don't configure them, through the serial console, you'll need to connect your LAN to the WAN port first, which will have IP address 192.168.1.1
+By default pfSense will want to make em0 WAN and em1 LAN, so if you don't configure these on first boot you'll need to initally connect to the port marked WAN to configure the device at 192.168.1.1
