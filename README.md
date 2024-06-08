@@ -78,11 +78,6 @@ Then fire up qemu
 sudo qemu-system-x86_64 -accel kvm -nographic -hda pfSense-CE-memstick-serial-2.7.2-RELEASE-amd64.img -hdb /dev/<YOUR-DISK> -m 2048
 ```
 
-If you get errors about read-only filesystem in the installer, go to the rescue shell and run:
-```
-mount -u /
-```
-
 Run through the installer then move the drive to the CyberRoam.
     
 
