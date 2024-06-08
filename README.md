@@ -85,8 +85,10 @@ Get into the Cyberoam BIOS, and change the SATA mode to AHCI and the Baud to 115
 
 The default pfSense user is 'admin' and password is 'pfSense'.
 
-The interfaces come up in the correct order:
+The interfaces appear to pfSense like this:
 
     em0 -> LAN
     em1 -> WAN
     em2 -> DMZ
+
+If you don't configure them, through the serial console, you'll need to connect your LAN to the WAN port first, which will have IP address 192.168.1.1
